@@ -1,16 +1,24 @@
 .container {
+    display: grid;
     height: 720px;
     width: 1280;
-    display: grid;
     background-color: beige;
     grid-template-rows: repeat(10, 1fr);
     grid-template-columns: repeat(5, 1fr);
     margin: 0;
 }
 
+.icons {
+    display: none;
+}
+
+.menu {
+    grid-row: 1/11;
+    grid-column: 1/2;
+}
+
 @media only screen and (max-width: 415px) and (max-height: 737px) {
     .container {
-        display: grid;
         width: 100vw;
         height: 100vh;
         grid-template-rows: repeat(9, 1fr);
@@ -64,12 +72,13 @@
         background-color: beige;
     }
 
-    .icon {
+    .icons {
         grid-row: 1/2;
         grid-column: 1/2;
         position: relative;
         top: 3vh;
         left: 1vw;
+        display: block;
     }
 
     .logo {
@@ -290,7 +299,7 @@
         grid-row: 3/4;
         grid-column: 1/8;
         width: 300px; height: 280px;
-        background: url(../img/sprite_nyheter.png) -330px -10px;
+        background: url(../img/sprite_nyheter.png) -10px -10px;
         transition: 0.3s;
     }
 
@@ -303,7 +312,7 @@
         grid-row: 5/6;
         grid-column: 1/8;
         width: 300px; height: 280px;
-        background: url(../img/sprite_nyheter.png) -10px -10px;
+        background: url(../img/sprite_nyheter.png) -330px -10px;
         transition: 0.3s;
     }
 
