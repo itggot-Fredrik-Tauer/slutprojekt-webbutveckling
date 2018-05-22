@@ -3,9 +3,11 @@
     height: 720px;
     width: 1280;
     background-color: beige;
-    grid-template-rows: repeat(10, 1fr);
-    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(10, 72px);
+    grid-template-columns: 220px repeat(4, 265px);
+    grid-row-gap: 10px;
     margin: 0;
+    background-color: beige;
 }
 
 .icons {
@@ -13,9 +15,92 @@
 }
 
 .menu {
+    height: 720px;
+    width: 210px;
     grid-row: 1/11;
     grid-column: 1/2;
+    position: absolute;
+    background: beige;
+    display: block;
+    z-index: 11;
 }
+
+header {
+    grid-row: 1/2;
+    grid-column: 1/8;
+    background-color: beige;
+    z-index: 10;
+}
+
+.logo {
+    margin: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+    position: relative;
+    top: 20px;
+}
+
+.mySlides {
+    grid-row: 1/10;
+    grid-column: 2/6;
+    text-align: center;
+    margin: auto;
+}
+
+.browse {
+    margin-right: 132.5px;
+    margin-left: 132.5px;
+    grid-row: 9/10;
+    grid-column: 3/5;
+    background-color: #f5f5dc;
+    border-style: solid;
+    border-color: black;
+    border-width: 2px;
+    transition: 0.3s;
+}
+
+.browse:hover {
+    background-color: rgb(179, 179, 152);
+}
+
+.h1_browse {
+    text-align: center;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin: 0;
+    position: relative;
+    top: 15px;
+    z-index: 10;
+}
+
+.a_browse {
+    height: 70px;
+    width: 270px;
+    position: absolute;
+    z-index: 11;
+}
+
+.a_menu {
+    text-decoration: none;
+    font-size: 20px;
+    color: #646464;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.a_menu:visited {
+    color: #646464;
+}
+
+.li_menu {
+    height: 7vh;
+    width: 150px;
+    margin-bottom: 3vh;
+    margin-right: 5vw;
+}
+
+.ul_menu {
+    text-align: left;
+}
+
 
 @media only screen and (max-width: 415px) and (max-height: 737px) {
     .container {
@@ -24,7 +109,8 @@
         grid-template-rows: repeat(9, 1fr);
         grid-template-columns: repeat(7, 1fr);
         background-color: beige;
-        margin: 0;  
+        margin: 0;
+        grid-row-gap: 0px;
     }
     
     .fade-layer{
@@ -97,29 +183,18 @@
         grid-column: 1/8;
         text-align: center;
         margin: 0;
+        display: block;
     }
 
     .browse {
+        margin-right: 0;
+        margin-left: 0;
         grid-row: 8/9;
         grid-column: 3/6;
-        background-color: #f5f5dc;
-        border-style: solid;
-        border-color: black;
-        border-width: 2px;
-        transition: 0.3s;
-    }
-
-    .browse:hover {
-        background-color: rgb(179, 179, 152);
     }
 
     .h1_browse {
-        text-align: center;
-        font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-        margin: 0;
-        position: relative;
         top: 1.5vh;
-        z-index: 10;
     }
 
     .a_browse {
