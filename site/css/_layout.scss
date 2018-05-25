@@ -1,4 +1,4 @@
-/* Här börjar css:n för produkter */
+/* css produkter */
 
 .container_produkter {
     display: grid;
@@ -77,7 +77,7 @@
     opacity: 0.85;
 }
 
-.tre_sträck {
+.tre_strack {
     grid-row: 11/12;
     grid-column: 2/4;
     text-align: center;
@@ -87,7 +87,7 @@
     text-shadow: 1px 1px 1px #444444;       
 }
 
-.bg-filmjölk {
+.bg-filmjolk {
     grid-row: 7/11;
     grid-column: 4/6;
     margin: auto;
@@ -97,12 +97,12 @@
     background: url(../img/sprite_produkter.png) -10px -10px;
 }
 
-.bg-filmjölk:hover {
+.bg-filmjolk:hover {
     background-color: white;
     opacity: 0.85;
 }
 
-.filmjölk {
+.filmjolk {
     grid-row: 11/12;
     grid-column: 4/6;
     text-align: center;
@@ -112,13 +112,13 @@
     text-shadow: 1px 1px 1px #444444;   
 }
 
-.a_köp {
+.a_kop {
     height: 280px;
     width: 300px;
     position: absolute;
 }
 
-/* Här börjar css:n för startsidan och sidomenyn */
+/* css startsidan och sidomenyn */
 
 .container {
     display: grid;
@@ -242,7 +242,7 @@ header {
     list-style-type: none;
 }
 
-/* Här börjar css:n för nyheter */
+/* css nyheter */
 
 .container_nyheter {
     display: grid;
@@ -302,13 +302,13 @@ header {
     opacity: 0.85;
 }
 
-.a_köp_nyheter {
+.a_kop_nyheter {
     height: 280px;
     width: 420px;
     position: absolute;
 }
 
-/* Här börjar css:n för bundles */
+/* css bundles */
 
 .container_bundles {
     display: grid;
@@ -353,9 +353,9 @@ header {
     opacity: 0.85;
 }
 
-/* Här börjar css:n för köpande */
+/* css kopande */
 
-.container_köp {
+.container_kop {
     display: grid;
     height: 792px;
     width: 1280px;
@@ -490,7 +490,7 @@ input {
 
 @media only screen and (max-width: 415px) and (max-height: 737px) {
     
-    /* Här börjar css:n för startsidan */
+    /* mobil css startsidan */
     
     .container {
         width: 100vw;
@@ -624,7 +624,7 @@ input {
         text-align: left;
     }
 
-    /* Här börjar css:n för produkter */
+    /* mobil css produkter */
 
     .container_produkter {
         display: grid;
@@ -661,22 +661,22 @@ input {
         grid-column: 1/8;
     }
 
-    .tre_sträck {
+    .tre_strack {
         grid-row: 7/8;
         grid-column: 1/8;
     }
 
-    .bg-filmjölk {
+    .bg-filmjolk {
         grid-row: 8/9;
         grid-column: 1/8;
     }
 
-    .filmjölk {
+    .filmjolk {
         grid-row: 9/10;
         grid-column: 1/8;
     }
 
-    /* Här börjar css:n för nyheter */
+    /* mobil css nyheter */
 
     .container_nyheter {
         display: grid;
@@ -714,13 +714,13 @@ input {
         background: url(../img/sprite_nyheter.png) -330px -310px;
     }
 
-    .a_köp_nyheter {
+    .a_kop_nyheter {
         width: 300px;
     }
     
-    /* Här börjar css:n för köpande */
+    /* mobil css kopande */
 
-    .container_köp {
+    .container_kop {
         display: grid;
         background-color: beige;
         width: 100vw;
@@ -823,7 +823,7 @@ input {
         margin: 0;
     }
 
-    /* Här börjar css:n för bundles */
+    /* mobil css bundles */
 
     .container_bundles {
         display: grid;

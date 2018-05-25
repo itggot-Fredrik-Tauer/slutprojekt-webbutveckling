@@ -1,5 +1,4 @@
 require 'cssminify'
-require 'uglifier'
 
 def minify(path, pattern, minifier, opts = nil)
     files = Dir.glob("#{path}#{pattern}")
@@ -14,4 +13,3 @@ def minify(path, pattern, minifier, opts = nil)
 end
 
 minify('public/css/', '*.css', 'CSSminify.compress')
-minify('public/js/', '*.js', 'Uglifier.compile', harmony: true)
